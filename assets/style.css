@@ -1,0 +1,71 @@
+@font-face {
+  font-family: lavoza;
+  src: url(../LavozaRegular-ZVYD3.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Old Standard TT", serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #c2b491;
+  color: black;
+}
+
+/* Navbar Styling */
+.nav-link {
+  position: relative;
+  font-weight: 500;
+  color: #2f2f2f;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #2f2f2f;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #2f2f2f;
+}
+
+/* Scroll Banner */
+.scroll-banner {
+  overflow-x: auto;
+  white-space: nowrap;
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  max-width: 100%;
+}
+
+.stroked h1 {
+  color: transparent;
+  -webkit-text-stroke: 0.15rem #897239;
+}
+
+.custom-font {
+  font-family: lavoza, serif;
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
